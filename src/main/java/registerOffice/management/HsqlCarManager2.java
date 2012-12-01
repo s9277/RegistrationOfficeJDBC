@@ -6,7 +6,7 @@ import java.util.List;
 
 import registerOffice.businessObjects.cars.PersonCar;
 
-public class HsqlCarManager implements ManagerInterface<PersonCar>{
+public class HsqlCarManager2 implements ManagerInterface<PersonCar>{
 
 	
 	//podlaczenie DB
@@ -26,7 +26,7 @@ public class HsqlCarManager implements ManagerInterface<PersonCar>{
 	PreparedStatement saveCar;
 	
 	
-	public HsqlCarManager(){
+	public HsqlCarManager2(){
 		try {
 			connection = DriverManager.getConnection(url);
 			stmt = connection.createStatement();
